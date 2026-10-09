@@ -1,0 +1,165 @@
+﻿// =============================================================================
+// DAX Measures: NovaPharm Pharmaceutical Market & Product Performance Analytics
+// Workspace: Power BI Desktop / Power BI Service
+// Model Schema: Star Schema (dim_product, dim_region, dim_competitor, dim_date, fact_sales, fact_market, fact_penetration)
+// =============================================================================
+
+// 1. CORE VOLUME & REVENUE MEASURES
+Total Revenue = 
+SUM(fact_sales[revenue])
+
+Total Units Sold = 
+SUM(fact_sales[units_sold])
+
+Total Prescriptions = 
+SUM(fact_sales[prescriptions])
+
+Total Market Value = 
+SUM(fact_market[total_market_value])
+
+Total Market Units = 
+SUM(fact_market[total_market_units])
+
+// 2. MARKET SHARE MEASURES
+Market Share Value % = 
+DIVIDE(
+    [Total Revenue],
+    [Total Market Value],
+    0
+)
+
+Market Share Unit % = 
+DIVIDE(
+    [Total Units Sold],
+    [Total Market Units],
+    0
+)
+
+// 3. TIME INTELLIGENCE & GROWTH MEASURES
+Prior Year Revenue = 
+CALCULATE(
+    [Total Revenue],
+    SAMEPERIODLASTYEAR(dim_date[date])
+)
+
+YoY Revenue Growth % = 
+DIVIDE(
+    [Total Revenue] - [Prior Year Revenue],
+    [Prior Year Revenue],
+    0
+)
+
+Prior Month Revenue = 
+CALCULATE(
+    [Total Revenue],
+    DATEADD(dim_date[date], -1, MONTH)
+)
+
+MoM Revenue Growth % = 
+DIVIDE(
+    [Total Revenue] - [Prior Month Revenue],
+    [Prior Month Revenue],
+    0
+)
+
+Base Period Revenue Jan 2024 = 
+CALCULATE(
+    [Total Revenue],
+    FILTER(
+        ALL(dim_date),
+        dim_date[year_month] = "2024-01"
+    )
+)
+
+Evolution Index = 
+DIVIDE(
+    [Total Revenue],
+    [Base Period Revenue Jan 2024],
+    0
+) * 100
+
+// 4. PENETRATION & POPULATION MEASURES
+Addressable Population = 
+SUM(fact_penetration[addressable_population])
+
+Patients Reached = 
+SUM(fact_penetration[patients_reached])
+
+Penetration Rate % = 
+DIVIDE(
+    [Patients Reached],
+    [Addressable Population],
+    0
+)
+
+// 5. PRICING & COMPETITIVE BENCHMARK MEASURES
+Average Selling Price = 
+DIVIDE(
+    [Total Revenue],
+    [Total Units Sold],
+    0
+)
+
+Competitor Average Price = 
+DIVIDE(
+    SUM(fact_market[competitor_revenue]),
+    SUM(fact_market[competitor_units]),
+    0
+)
+
+Price Index = 
+DIVIDE(
+    [Average Selling Price],
+    [Competitor Average Price],
+    0
+) * 100
+
+// 6. PORTFOLIO CONTRIBUTION & RANKING MEASURES
+Portfolio Revenue Contribution % = 
+DIVIDE(
+    [Total Revenue],
+    CALCULATE(
+        [Total Revenue],
+        ALL(dim_product)
+    ),
+    0
+)
+
+Product Revenue Rank = 
+IF(
+    HASONEVALUE(dim_product[product_name]),
+    RANKX(
+        ALL(dim_product),
+        [Total Revenue],
+        ,
+        DESC,
+        Dense
+    ),
+    BLANK()
+)
+
+Regional Performance Rank = 
+IF(
+    HASONEVALUE(dim_region[region]),
+    RANKX(
+        ALL(dim_region),
+        [Total Revenue],
+        ,
+        DESC,
+        Dense
+    ),
+    BLANK()
+)
+
+// 7. STRATEGIC MATRIX QUADRANT CLASSIFICATION
+BCG Matrix Segment = 
+VAR Share = [Market Share Value %] * 100
+VAR Growth = [YoY Revenue Growth %] * 100
+RETURN
+    SWITCH(
+        TRUE(),
+        Share >= 30 && Growth >= 8, "Star (High Share / High Growth)",
+        Share >= 30 && Growth < 8, "Cash Cow (High Share / Low Growth)",
+        Share < 30 && Growth >= 8, "Question Mark (Low Share / High Growth)",
+        "Dog (Low Share / Low Growth)"
+    )

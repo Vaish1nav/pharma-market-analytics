@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment / secrets
+.env
+.env.*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Python generated files
+*.log
+
+# Large/generated database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Power BI temporary/backup files
+*.pbit
+~$*.pbix
+
+# Excel temporary files
+~$*.xlsx
+~$*.xls
+
+# Keep source code and documentation
+# Generated CSVs can be committed if they are reasonably sized.

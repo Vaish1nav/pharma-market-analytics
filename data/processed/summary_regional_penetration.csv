@@ -1,0 +1,11 @@
+region_id,region,country,market_type,region_revenue,addressable_population,patients_reached,penetration_rate_pct
+10,MEA - Gulf,UAE,Metro Tier 2,109841806.14,11256699,532634,4.73
+9,LATAM - Brazil,Brazil,Metro Tier 2,104012425.68,16283730,499327,3.07
+5,Europe - Southern,Spain,Metro Tier 2,82131175.51,14224991,383886,2.7
+4,Europe - UK/IE,United Kingdom,Metro Tier 1,76053112.27,18055386,354467,1.96
+3,Europe - DACH,Germany,Metro Tier 1,69842856.13,19379417,331296,1.71
+6,APAC - Japan,Japan,Metro Tier 1,87219422.37,25167886,414268,1.65
+8,APAC - India South,India,Metro Tier 1,98284792.19,28360441,469014,1.65
+2,North America - West,United States,Metro Tier 1,63998545.65,20465277,307883,1.5
+7,APAC - India North,India,Metro Tier 1,93394029.68,32991032,443190,1.34
+1,North America - East,United States,Metro Tier 1,58516918.37,22836429,281584,1.23

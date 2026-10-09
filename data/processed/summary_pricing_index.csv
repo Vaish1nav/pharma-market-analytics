@@ -1,0 +1,26 @@
+product_id,product_name,therapeutic_area,product_type,novapharm_price,competitor_price,price_index,novapharm_market_share_pct
+605,Synaptex 100mg,CNS,Branded,150.25,137.05,109.63,31.75
+202,Targetis 250mg,Oncology,Branded,849.04,775.54,109.48,28.45
+201,OncoShield 100mg,Oncology,Branded,1197.66,1094.81,109.39,47.03
+502,AcidOff 40mg,Gastroenterology,Branded,55.08,50.36,109.37,30.27
+301,GlycaControl 5mg,Diabetes,Branded,109.85,100.45,109.36,46.83
+602,Synaptex 50mg,CNS,Branded,95.2,87.05,109.36,29.4
+304,GlycaControl 10mg,Diabetes,Branded,160.07,146.43,109.31,30.8
+204,OncoShield 200mg,Oncology,Branded,2098.69,1920.76,109.26,29.45
+104,Lipinox 40mg,Cardiovascular,Branded,85.0,77.87,109.16,30.99
+101,Cardiovast 10mg,Cardiovascular,Branded,44.88,41.14,109.1,30.49
+302,InsuliMax 100IU,Diabetes,Branded,145.29,133.28,109.01,31.56
+102,Cardiovast 20mg,Cardiovascular,Branded,65.0,59.63,109.0,29.29
+603,CogniMax 10mg,CNS,Branded,140.45,128.97,108.9,29.56
+401,AeroBreath Inhaler,Respiratory,Branded,130.37,119.94,108.7,29.76
+404,AeroBreath Forte,Respiratory,Branded,175.2,161.21,108.68,30.18
+601,NeuroCalm 5mg,CNS,Generic,30.01,32.35,92.76,27.39
+403,RespiClear Syrup,Respiratory,Generic,14.96,16.18,92.46,18.22
+503,UlcerFree 300mg,Gastroenterology,Generic,15.99,17.3,92.44,26.41
+402,PulmoShield 10mg,Respiratory,Generic,25.02,27.07,92.43,25.58
+103,Vasoten 5mg,Cardiovascular,Generic,18.48,20.03,92.28,27.03
+303,Metformin Nova 500mg,Diabetes,Generic,12.02,13.05,92.11,26.57
+604,NeuroCalm 10mg,CNS,Generic,42.06,45.73,91.98,25.64
+501,GastraGuard 20mg,Gastroenterology,Generic,21.98,23.9,91.95,18.17
+203,ImmunoMax 500mg,Oncology,Generic,620.48,675.34,91.88,26.44
+504,GastraGuard 40mg,Gastroenterology,Generic,33.93,37.0,91.7,26.88

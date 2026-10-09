@@ -1,0 +1,9 @@
+competitor_id,competitor_name,competitor_product_name,therapeutic_area,price_multiplier
+10,CardioGlobal Pharma,Cardiostat,Cardiovascular,0.95
+11,Apex Healthcare,VasoPlus,Cardiovascular,0.88
+12,OncoNova Therapeutics,CancerStop,Oncology,1.1
+13,GlycoGlobal Labs,SugarNorm,Diabetes,0.92
+14,RespiraCorp,BreatheEasy,Respiratory,1.05
+15,GastroMed Inc.,AcidiStop,Gastroenterology,0.9
+16,NeuroPharm Ltd.,MindBalance,CNS,1.08
+17,GenericX Pharma,GenericMulti,Multiple,0.75

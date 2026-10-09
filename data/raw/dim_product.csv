@@ -1,0 +1,26 @@
+product_id,product_name,brand_name,therapeutic_area,dosage_form,molecule,product_type,launch_date,patent_status,base_price
+101,Cardiovast 10mg,Cardiovast,Cardiovascular,Tablet,Atorvastatin,Branded,2020-03-15,On-Patent,45.0
+102,Cardiovast 20mg,Cardiovast,Cardiovascular,Tablet,Atorvastatin,Branded,2021-06-10,On-Patent,65.0
+103,Vasoten 5mg,Vasoten,Cardiovascular,Capsule,Amlodipine,Generic,2018-01-20,Off-Patent,18.5
+104,Lipinox 40mg,Lipinox,Cardiovascular,Tablet,Rosuvastatin,Branded,2022-11-01,On-Patent,85.0
+201,OncoShield 100mg,OncoShield,Oncology,Injectable,Pembrolizumab,Branded,2021-09-01,On-Patent,1200.0
+202,Targetis 250mg,Targetis,Oncology,Tablet,Gefitinib,Branded,2019-04-15,On-Patent,850.0
+203,ImmunoMax 500mg,ImmunoMax,Oncology,Infusion,Rituximab,Generic,2017-08-10,Off-Patent,620.0
+204,OncoShield 200mg,OncoShield,Oncology,Injectable,Pembrolizumab,Branded,2023-02-15,On-Patent,2100.0
+301,GlycaControl 5mg,GlycaControl,Diabetes,Tablet,Dapagliflozin,Branded,2020-10-05,On-Patent,110.0
+302,InsuliMax 100IU,InsuliMax,Diabetes,Pen,Insulin Glargine,Branded,2019-02-28,On-Patent,145.0
+303,Metformin Nova 500mg,Metformin Nova,Diabetes,Tablet,Metformin,Generic,2015-05-12,Off-Patent,12.0
+304,GlycaControl 10mg,GlycaControl,Diabetes,Tablet,Dapagliflozin,Branded,2022-01-15,On-Patent,160.0
+401,AeroBreath Inhaler,AeroBreath,Respiratory,Inhaler,Fluticasone/Salmeterol,Branded,2020-07-20,On-Patent,130.0
+402,PulmoShield 10mg,PulmoShield,Respiratory,Tablet,Montelukast,Generic,2016-11-11,Off-Patent,25.0
+403,RespiClear Syrup,RespiClear,Respiratory,Syrup,Ambroxol,Generic,2017-03-30,Off-Patent,15.0
+404,AeroBreath Forte,AeroBreath,Respiratory,Inhaler,Budasonide/Formoterol,Branded,2023-05-10,On-Patent,175.0
+501,GastraGuard 20mg,GastraGuard,Gastroenterology,Capsule,Omeprazole,Generic,2016-04-18,Off-Patent,22.0
+502,AcidOff 40mg,AcidOff,Gastroenterology,Tablet,Pantoprazole,Branded,2021-01-22,On-Patent,55.0
+503,UlcerFree 300mg,UlcerFree,Gastroenterology,Tablet,Ranitidine Substitute,Generic,2018-09-09,Off-Patent,16.0
+504,GastraGuard 40mg,GastraGuard,Gastroenterology,Capsule,Omeprazole,Generic,2019-12-01,Off-Patent,34.0
+601,NeuroCalm 5mg,NeuroCalm,CNS,Tablet,Escitalopram,Generic,2017-06-14,Off-Patent,30.0
+602,Synaptex 50mg,Synaptex,CNS,Tablet,Sertraline,Branded,2022-04-01,On-Patent,95.0
+603,CogniMax 10mg,CogniMax,CNS,Tablet,Donepezil,Branded,2020-11-18,On-Patent,140.0
+604,NeuroCalm 10mg,NeuroCalm,CNS,Tablet,Escitalopram,Generic,2019-08-20,Off-Patent,42.0
+605,Synaptex 100mg,Synaptex,CNS,Tablet,Sertraline,Branded,2023-09-01,On-Patent,150.0
